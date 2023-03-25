@@ -31,7 +31,7 @@ body {
 }
 
 .section {
-    padding: var(--padding)
+    padding: var(--padding);
     margin-bottom: 50px;
     flex: 1;
 }
@@ -43,6 +43,11 @@ button {
     border-style: none;
     background-color: var(--clr-accent);
     color: var(--clr-light);
+}
+
+h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
 }
 
 /* Header & Navigation Section  */
@@ -118,14 +123,18 @@ li {
     align-items: center;
 }
 
-/* .card-container {
+.card-container {
     display: flex;
-    min-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    gap: 8px;
+}
 
-} */
 
 .card {
-    flex: 1;
+
     flex-shrink: 0;
     flex-direction: row;
     height: 100px;
@@ -137,16 +146,26 @@ li {
 }
 
 
+
 /* Quote Section */
 
-.quote {
+.quote-section {
+    flex: 1;
     background-color: var(--clr-light-seconday);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quote {
+    flex: 1;
+
 }
 
 /* Call to Action Section  */
 
 .call-to-action {
+    flex: 1;
     display: flex;
 }
 
