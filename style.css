@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     /* border: solid 2px red; */
-  
+
 }
 
 a {
@@ -129,7 +129,7 @@ li {
 .left {
     flex: 1;
     max-width: 350px;
-    
+
 }
 
 .img-placeholder {
@@ -211,7 +211,7 @@ li {
     flex-direction: column-reverse;
     font-size: 24px;
     font-style: italic;
-    
+
 
 }
 
