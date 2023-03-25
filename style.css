@@ -25,11 +25,27 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-
-    /* Header & Navigation Section  */
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+.section {
+    padding: var(--padding)
+    margin-bottom: 50px;
+    flex: 1;
+}
+
+button {
+    height: 30px;
+    min-width: 100px;
+    border-radius: var(--border-radius);
+    border-style: none;
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+/* Header & Navigation Section  */
 .header {
     color: var(--clr-light);
     background-color: var(--clr-hero);
@@ -91,6 +107,8 @@ li {
 .information {
     display: flex;
     flex-direction: column;
+    text-align: center;
+
 
 }
 
@@ -107,13 +125,38 @@ li {
 } */
 
 .card {
-   flex: 1;
-   flex-shrink: 0;
-   flex-direction: row;
+    flex: 1;
+    flex-shrink: 0;
+    flex-direction: row;
     height: 100px;
     width: 100px;
     border-radius: var(--border-radius);
     border-color: var(--clr-accent);
-    border-style:dotted;
+    border-style: dotted;
     margin-bottom: 24px;
+}
+
+
+/* Quote Section */
+
+.quote {
+    background-color: var(--clr-light-seconday);
+    display: flex;
+}
+
+/* Call to Action Section  */
+
+.call-to-action {
+    display: flex;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    background-color: var(--clr-hero);
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light);
+    min-height: 5vh;
 }
